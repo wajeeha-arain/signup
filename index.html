@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./app.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <form onsubmit="signup(event)">
+            <h1>Sign up</h1>
+            <div class="input-box">
+                <input type="email" name="" id="email" placeholder="Email" required>
+                <i class="fa fas-user"></i>
+            </div>
+            <div class="input-box">
+                <input type="password" name="" id="password" placeholder="Password" required>
+                <i class="fa fa-lock-alt"></i>
+            </div>
+
+            <div class="remember-footer">
+                <label><input type="checkbox" name="" id="checkbox">
+                Remember me
+                </label>
+                <a href="#">Forgot password</a>
+            </div>
+
+            <button type="submit" class="btn">Submit</button>
+
+            <div class="register-link">
+                <p>Don`t have an account? <a href="#">
+                    Register
+                </a></p>
+            </div>
+        </form>
+    </div>
+
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js"></script>
+ 
+    <script>
+     const firebaseConfig = {
+     apiKey: "AIzaSyBowvTpF5MyTs2pyR_goTGiF3SGywTPp-Y",
+     authDomain: "testing-app-3acb7.firebaseapp.com",
+     projectId: "testing-app-3acb7",
+     storageBucket: "testing-app-3acb7.appspot.com",
+     messagingSenderId: "410702172977",
+     appId: "1:410702172977:web:b6338c771b9a5497f59610",
+     measurementId: "G-6Z4DHGKLRH"
+   };
+ 
+   firebase.initializeApp(firebaseConfig);
+    </script>
+
+</body>
+</html>
